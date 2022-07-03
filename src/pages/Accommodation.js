@@ -7,6 +7,7 @@ import Loader from '../components/Loader';
 import Tag from '../components/Tag';
 import Header from '../components/Header';
 import Collapse from '../components/Collapse';
+import Rating from '../components/Rating';
 
 
 const Accommodation = () => {
@@ -15,8 +16,10 @@ const Accommodation = () => {
     const [data, setData] = useState({});
     const [user, setUser] = useState({});
     const [tags, setTags] = useState([]);
+    const [equipments, setEquipments] = useState([]);
     const [pictures, setPictures] = useState([]);
-    const [isLoading, setIsLoading] = useState(false) 
+    const [isLoading, setIsLoading] = useState(false);
+    const [stars, setStars] = useState(0)
 
     useEffect(() => {
         setIsLoading(true)
@@ -28,9 +31,11 @@ const Accommodation = () => {
                 const logement = value.find((logement) => logement.id === id )
                 setUser(logement.host)
                 setTags(logement.tags)
+                setEquipments(logement.equipments)
                 setPictures(logement.pictures)
                 setData(logement)
                 setIsLoading(false)
+                setStars(logement.rating)
             })
             .catch((error) => console.log(error))
             
@@ -38,7 +43,7 @@ const Accommodation = () => {
     getData()
 }, [id])
 
-    
+    console.log(stars)
 /* console.log(data.host)  */
     
     /* const getData = () =>{
@@ -51,7 +56,7 @@ const Accommodation = () => {
     }
     useEffect(() => getData(), []); */
 
-    console.log(pictures)  
+
     return (
         <div>
             <Header />
@@ -66,20 +71,43 @@ const Accommodation = () => {
             <div>
                 <h1>{data.title}</h1>
                 <p>{data.location}</p>
+                <ul>
+                    {tags.map((tag, index) =>(
+                        <Tag key={index} tag={tag} />
+                    ))
+                    } 
+                
+                </ul>
             </div>
-            
+            <div>
                 <Host data={user} />
                 
+                <span className='rating'>
+                {[1, 2, 3, 4, 5].map((value) =>(
+                    <Rating 
+                    key={value} 
+                    filled={value <= stars} 
+                    etoiles={stars} />
+                    ))
+                
+                    }
+                </span>
+            </div>
+                
             
             </div>
-            <ul>
-                {tags.map((tag, index) =>(
-                    <Tag key={index} tag={tag} />
-                ))
-                } 
-                
-            </ul>
-            <Collapse />
+            
+            <div className='accommodation__collapses'>
+                <div className='accommodation__collapses--description'>
+                    <Collapse title={'Description'} content={data.description} />
+                </div>
+                <div className='accommodation__collapses--equipements'>
+                    
+                        <Collapse title={'Equipements'} content={equipments} />
+                    
+                    
+                </div>
+            </div>
             </div>
             )}  
             <Footer />

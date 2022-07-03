@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Host = (host) => {
-    console.log(host.data.name)
+
     return (
         <div className='host'>
             <h2>{host.data.name}</h2>

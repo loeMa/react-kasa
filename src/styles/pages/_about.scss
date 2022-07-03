@@ -1,3 +1,10 @@
 .about{
     margin: 0 100px 40px 100px;
+
+    &__collapses{
+        margin: 31px 0 201px 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 31px;
+    }
 }

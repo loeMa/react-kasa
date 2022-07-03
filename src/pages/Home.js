@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Flats from '../components/Flats';
 import Footer from '../components/Footer';
-import myImage from '../assets/img/IMG.png'
+import myImage from '../assets/img/IMG.png';
 import Header from '../components/Header';
 
 const Home = () => {

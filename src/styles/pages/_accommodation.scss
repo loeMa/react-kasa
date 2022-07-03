@@ -41,8 +41,29 @@
             font-weight: 500;
             color: $color-principal;
         }
+        ul{
+            display: flex;
+            margin-top: 30px;
+        }
+        .rating{
+            display: flex;
+            padding-top: 24px;
+        }
     }
-    ul{
+    
+    &__collapses{
+        margin: 26px 0 201px 0;
         display: flex;
+        flex-direction: row; 
+        column-gap: 76px;
+        flex-wrap: wrap;
+        
+        &--description{
+            flex: 1 1 0;
+        }
+
+        &--equipements{
+            flex: 1 1 0;
+        }
     }
 }
