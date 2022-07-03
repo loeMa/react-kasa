@@ -2,7 +2,8 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Flats from '../components/Flats';
 import Footer from '../components/Footer';
-import myImage from '../assets/img/IMG.png';
+import desktopImage from '../assets/img/IMG.png';
+import mobileImage from '../assets/img/IMGResponsive.png';
 import Header from '../components/Header';
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
             <Header />
             <div className='main__home'>
                 
-                <Banner test={"Chez vous, partout et ailleurs"} image={myImage} />
+                <Banner test={"Chez vous, partout et ailleurs"} desktopImage={desktopImage} mobileImage={mobileImage}  />
                 <Flats />
             </div>
                 <Footer />

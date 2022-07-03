@@ -43,7 +43,7 @@ const Accommodation = () => {
     getData()
 }, [id])
 
-    console.log(stars)
+
 /* console.log(data.host)  */
     
     /* const getData = () =>{
@@ -79,7 +79,7 @@ const Accommodation = () => {
                 
                 </ul>
             </div>
-            <div>
+            <div className='accommodation__presentation__second'>
                 <Host data={user} />
                 
                 <span className='rating'>

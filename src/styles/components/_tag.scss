@@ -14,4 +14,10 @@
         font-size: 14px;
         color: white;
     }
+    @media (max-width: 599px) {
+        width: 84px;
+        p{
+            font-size: 10px;
+        }
     }
+}

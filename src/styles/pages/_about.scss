@@ -7,4 +7,7 @@
         flex-direction: column;
         row-gap: 31px;
     }
+    @media (max-width: 599px) {
+        margin: 0 20px;
+    }
 }

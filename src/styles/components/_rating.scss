@@ -1,5 +1,12 @@
 .starfill{
     filter: invert(48%) sepia(7%) saturate(4600%) hue-rotate(313deg) brightness(111%) contrast(101%);
 
-    
+    @media (max-width: 599px) {
+        height: 15px;
+    }
+}
+.starEmpty{
+    @media (max-width: 599px) {
+        height: 15px;
+    }
 }

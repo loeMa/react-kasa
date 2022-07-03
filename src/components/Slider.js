@@ -4,7 +4,7 @@ import arrowLeft from '../assets/img/previous.png'
 
 const Slider = ({data}) => {
 
-    const [indexImg, setIndexImg] = useState([0]);
+    const [indexImg, setIndexImg] = useState(0);
         
     useEffect(() =>{
         const lastIndex = data.length - 1;
@@ -17,7 +17,6 @@ const Slider = ({data}) => {
         }
         
     }, [indexImg, data])
-
 
     return (
         <li className='sliders'>
