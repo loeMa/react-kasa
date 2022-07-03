@@ -1,0 +1,23 @@
+.banner{
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    
+    position: relative;
+
+    img{
+        height: 223px;
+        width: 100%;
+        filter: brightness(70%);
+    }
+    h1{
+        font-size: 48px;
+        font-weight: 500;
+        color: white;
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        
+    }
+}

@@ -9,10 +9,8 @@ $color-principal: #FF6060;
 
 body{
     font-family: $font-1;
-    margin: 40px 100px;
-    @media (max-width: 599px) {
-        margin: 20px;
-    }
+    
+    
 }
 
 * {

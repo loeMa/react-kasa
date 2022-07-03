@@ -1,19 +1,22 @@
 import React from 'react';
-import Logo from '../components/Logo';
-import Navigation from '../components/Navigation';
+import Banner from '../components/Banner';
+import Flats from '../components/Flats';
+import Footer from '../components/Footer';
+import myImage from '../assets/img/IMG.png'
+import Header from '../components/Header';
 
 const Home = () => {
     return (
         <div>
-            <nav className='navigation__bar'>
-                <Logo />
-                <Navigation />
-            </nav>
-            <div>
-                <h1>Accueil</h1>
+            <Header />
+            <div className='main__home'>
+                
+                <Banner test={"Chez vous, partout et ailleurs"} image={myImage} />
+                <Flats />
             </div>
-            
-        </div>
+                <Footer />
+            </div>
+        
     );
 };
 

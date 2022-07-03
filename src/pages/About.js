@@ -1,15 +1,19 @@
 import React from 'react';
-import Logo from '../components/Logo';
-import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import myImage from '../assets/img/bannerApropos.png';
+import Banner from '../components/Banner';
+import Header from '../components/Header';
+
 
 const About = () => {
     return (
         <div>
-            <nav className='navigation__bar'>
-                <Logo />
-                <Navigation />
-            </nav>
-            <h1>A propos</h1>
+            <Header />
+            <div className='about'>
+                <Banner test={""} image={myImage} />
+            </div>
+            
+            <Footer />
         </div>
     );
 };

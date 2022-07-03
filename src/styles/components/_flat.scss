@@ -1,0 +1,12 @@
+.flat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 60px;
+    row-gap: 60px;
+    padding: 50px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin-top: 43px;
+}

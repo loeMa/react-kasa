@@ -1,15 +1,12 @@
 import React from 'react';
-import Logo from '../components/Logo';
-import Navigation from '../components/Navigation';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const Error = () => {
     return (
         <div>
-            <nav className='navigation__bar'>
-                <Logo />
-                <Navigation />
-            </nav>
+            <Header />
             <div className='main'>
                 <div className='main__text'>
                     <h1>404</h1>
@@ -20,7 +17,7 @@ const Error = () => {
                     <p>Retournez sur la page d'accueil</p>
                 </NavLink>
             </div>
-            
+            <Footer />
         </div>
     );
 };
