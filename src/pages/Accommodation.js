@@ -24,7 +24,7 @@ const Accommodation = () => {
     useEffect(() => {
         setIsLoading(true)
         const getData = async() =>{
-         
+        
         await fetch(`http://localhost:3004/logements`)
             .then((response) => response.json() )
             .then((value) => {
@@ -43,18 +43,6 @@ const Accommodation = () => {
     getData()
 }, [id])
 
-
-/* console.log(data.host)  */
-    
-    /* const getData = () =>{
-        axios.get("http://localhost:3004/logements").then((res) => {
-            const datas = res.data;
-            const dataSelected = datas.filter(selected => selected.id === id)
-            
-            setData(dataSelected[0])
-        })
-    }
-    useEffect(() => getData(), []); */
 
 
     return (

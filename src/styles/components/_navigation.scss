@@ -19,7 +19,7 @@
 
         a {
             text-decoration: none;
-            padding: 10px;
+            margin: 10px;
 
             li {
                 color: $color-principal;
@@ -28,11 +28,28 @@
                 font-size: 24px;
                 @media (max-width: 599px) {
                    font-size: 12px;
+                   text-transform: uppercase;
                 }
             }
         }
     }
-    .nav-active{
-
+    .nav-active {
+        position: relative;
+        &::after{ 
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: $color-principal;
+            animation: navbar 1000ms; 
+        }
+    }
+    @keyframes navbar {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100%;
+        }
     }
 }

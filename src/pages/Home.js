@@ -12,7 +12,7 @@ const Home = () => {
             <Header />
             <div className='main__home'>
                 
-                <Banner test={"Chez vous, partout et ailleurs"} desktopImage={desktopImage} mobileImage={mobileImage}  />
+                <Banner test={"Chez vous, partout et ailleurs"} desktopImage={desktopImage} mobileImage={mobileImage} height={""} />
                 <Flats />
             </div>
                 <Footer />

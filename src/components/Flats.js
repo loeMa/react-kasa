@@ -5,11 +5,26 @@ import Card from './Card';
 const Flat = () => {
 
     const [data, setData] = useState([]);
-    const getData = () =>{
+    
+    
+    /* const getData = () =>{
         axios.get("http://localhost:3004/logements").then((res) => setData(res.data))
-    };
+    }; */
 
-    useEffect(() => getData(), []);
+    useEffect(() => {
+        const getData = async() =>{
+         
+            await fetch(`http://localhost:3004/logements`)
+                .then((response) => response.json() )
+                .then((value) => {
+                    setData(value)
+                    
+                })
+                .catch((error) => console.log(error))
+                
+            }
+            getData()
+    }, []); 
 
     return (
         <div>
