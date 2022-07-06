@@ -12,9 +12,9 @@ const Flat = () => {
     }; */
 
     useEffect(() => {
-        const getData = async() =>{
+        const getData = () =>{
          
-            await fetch(`http://localhost:3004/logements`)
+            fetch(`http://localhost:3004/logements`)
                 .then((response) => response.json() )
                 .then((value) => {
                     setData(value)

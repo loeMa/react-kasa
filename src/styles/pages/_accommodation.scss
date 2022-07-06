@@ -9,6 +9,7 @@
         margin: 30px 0 20px 0;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         h1{
             font-size: 36px;
@@ -24,6 +25,8 @@
         ul{
             display: flex;
             margin-top: 30px;
+            flex-wrap: wrap;
+            row-gap: 20px;
         }
         
         @media (max-width: 599px) {
@@ -42,11 +45,13 @@
                 display: flex;
                 padding-top: 24px;
             }
-            @media (max-width: 599px) {
+            @media (max-width: 1024px) {
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
                 align-items: center;
+                width: 100%;
+                margin-top: 20px;
                 .rating{
                     padding-top: 0;
                 }
