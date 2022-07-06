@@ -7,9 +7,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 599px) {
         height: 111px;
+        justify-content: flex-start;
     }
     span{
         background: #000000;
@@ -35,9 +39,7 @@
         font-size: 48px;
         font-weight: 500;
         color: white;
-        position: absolute;
-        top: 35%;
-        left: 25%;
+        z-index: 1;
         @media (max-width: 1024px) {
             font-size: 31px;
             left: 12%;
@@ -46,9 +48,8 @@
         }
         @media (max-width: 599px) {
             font-size: 24px;
-            left: 16px;
-            top: 27px;
-            width: 217px;
+            width: 65%;
+            padding-left: 16px;
         }
         
     }

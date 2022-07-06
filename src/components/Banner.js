@@ -3,7 +3,8 @@ import React from 'react';
 const Banner = ({test, desktopImage, mobileImage, height}) => {
 
     const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
-
+console.log(window.innerWidth)
+console.log(imageUrl)
     const style = {
         backgroundImage: `url(${imageUrl})`,
         height: `${height}` ,
