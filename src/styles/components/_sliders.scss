@@ -15,8 +15,14 @@
         img{
             height: 79px;
         }
-        @media (max-width: 599px) {
+        @media (max-width: 1024px) {
             top: 50%;
+            img{
+                height: 35px;
+            }
+        }
+        @media (max-width: 599px) {
+
             img{
                 height: 20px;
             }

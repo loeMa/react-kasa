@@ -9,6 +9,11 @@
     background-color: #F6F6F6;
     border-radius: 25px;
     margin-top: 43px;
+    @media (max-width: 1024px) {
+        a{
+            width: 100%;
+        }
+    }
     @media (max-width: 599px) {
         background: none;
         padding: 0;

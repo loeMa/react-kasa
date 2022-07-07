@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Banner = ({test, desktopImage, mobileImage, height}) => {
+const Banner = ({title, desktopImage, mobileImage, height}) => {
 
     const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
-console.log(window.innerWidth)
-console.log(imageUrl)
+
     const style = {
         backgroundImage: `url(${imageUrl})`,
         height: `${height}` ,
@@ -13,8 +12,7 @@ console.log(imageUrl)
     return (
         <div className='banner'  style={style}>
             <span></span>
-            {/* <img src={image} alt="paysage" /> */}
-            <h1>{test}</h1>
+            <h1>{title}</h1>
         </div>
     );
 };

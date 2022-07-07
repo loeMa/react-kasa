@@ -11,12 +11,11 @@ const Home = () => {
         <div>
             <Header />
             <div className='main__home'>
-                
-                <Banner test={"Chez vous, partout et ailleurs"} desktopImage={desktopImage} mobileImage={mobileImage} height={""} />
+                <Banner title={"Chez vous, partout et ailleurs"} desktopImage={desktopImage} mobileImage={mobileImage} height={""} />
                 <Flats />
             </div>
-                <Footer />
-            </div>
+            <Footer />
+        </div>
         
     );
 };
