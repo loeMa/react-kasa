@@ -13,7 +13,7 @@ const Collapse = ({title, content}) => {
     return (
         <div className='collapse'>
             <button className='collapse__title' onClick={handleToggle}>
-                <p >{title}</p>
+                <span >{title}</span>
                 <img src={arrow} alt='ouvrir' className={isActive? 'arrowRotate' : ""} />
             </button>
             <div className={`collapse__content ${isActive ? "" : 'active' }`} >

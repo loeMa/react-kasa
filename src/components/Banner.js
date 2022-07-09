@@ -12,7 +12,8 @@ const Banner = ({title, desktopImage, mobileImage, height}) => {
     return (
         <div className='banner'  style={style}>
             <span></span>
-            <h1>{title}</h1>
+            {title? <h1>{title}</h1> : ""}
+            
         </div>
     );
 };

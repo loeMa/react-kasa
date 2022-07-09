@@ -52,9 +52,10 @@ const Accommodation = () => {
                 <Loader />
             ) : ( 
             <div className='accommodation'>
-                
+                <ul>
                     <Slider  data={pictures} />
-            
+                </ul>
+
             <div className='accommodation__presentation'>
             <div>
                 <h1>{data.title}</h1>

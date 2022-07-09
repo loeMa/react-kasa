@@ -17,7 +17,7 @@
         cursor: pointer;
         
 
-        p{
+        span{
             color: white;
             font-size: 18px;
             font-weight: 500;
@@ -35,7 +35,7 @@
         }
         @media (max-width: 599px) {
             height: 29px;
-            p{
+            span{
                 font-size: 13px;
             }
             img{

@@ -6,11 +6,11 @@ const Rating = ({filled, etoiles}) => {
 
 
     return (
-        <div>
+        
             <img src={star} className=
             {filled ? "starfill" : "starEmpty"} 
             alt={etoiles + "étoiles"} />
-        </div>
+        
     );
 };
 
