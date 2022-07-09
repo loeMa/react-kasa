@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-kasa/static/css/main.d3cdef7f.css",
+    "main.js": "/react-kasa/static/js/main.8ada97e8.js",
+    "static/media/bannerApropos.png": "/react-kasa/static/media/bannerApropos.03e6215bb0e9a3dfd81d.png",
+    "static/media/IMG.png": "/react-kasa/static/media/IMG.c6db05644cff8f8c4203.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/react-kasa/static/media/Montserrat-VariableFont_wght.3068cdb43142f5625baf.ttf",
+    "static/media/backgroundResponsive.png": "/react-kasa/static/media/backgroundResponsive.653f07bb5fcb8bd14aa1.png",
+    "static/media/IMGResponsive.png": "/react-kasa/static/media/IMGResponsive.e1914661394ee6c5d5fd.png",
+    "static/media/logo.svg": "/react-kasa/static/media/logo.606fd9e7c3bf6f357907b3623c23c04c.svg",
+    "index.html": "/react-kasa/index.html",
+    "static/media/star.svg": "/react-kasa/static/media/star.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "main.d3cdef7f.css.map": "/react-kasa/static/css/main.d3cdef7f.css.map",
+    "main.8ada97e8.js.map": "/react-kasa/static/js/main.8ada97e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3cdef7f.css",
+    "static/js/main.8ada97e8.js"
+  ]
+}
