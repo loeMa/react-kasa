@@ -90,10 +90,7 @@ const Accommodation = () => {
                     <Collapse title={'Description'} content={data.description} />
                 </div>
                 <div className='accommodation__collapses--equipements'>
-                    
-                        <Collapse title={'Equipements'} content={equipments} />
-                    
-                    
+                    <Collapse title={'Equipements'} content={equipments} />
                 </div>
             </div>
             </div>

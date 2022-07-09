@@ -4,6 +4,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 25px;
+    list-style: none;
     @media (max-width: 599px) {
         height: 255px;
     }
@@ -30,6 +31,9 @@
     }
     .next{
         right: 0;
+    }
+    .previous{
+        left: 0;
     }
 
     p{
